@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div class='flex min-h-0 flex-col ' >
         <h1 class=' text-xl mt-6 font-medium'>About</h1>
-        <p class='text-gray-500 mt-4'> I&aposm a passionate Web Developer specializing in front-end technologies, dedicated  <br/> to creating engaging, user-friendly interfaces that combine aesthetic appeal <br/> with optimal performance to enhance the overall user experience.<br/> My techstack mainly revolves around <span class='font-semibold text-black'> Reactjs, Nextjs.</span></p>
+        <p class='text-gray-500 mt-4'> I am a passionate Web Developer specializing in front-end technologies, dedicated  <br/> to creating engaging, user-friendly interfaces that combine aesthetic appeal <br/> with optimal performance to enhance the overall user experience.<br/> My techstack mainly revolves around <span class='font-semibold text-black'> Reactjs, Nextjs.</span></p>
       </div>
 
       <div class='flex min-h-0 flex-col '>
