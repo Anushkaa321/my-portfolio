@@ -1,113 +1,128 @@
-import Image from "next/image";
-
+import { IoLocationSharp } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoIosLink } from "react-icons/io";
+import { RxDotFilled } from "react-icons/rx";
+import { FaPhoneAlt } from "react-icons/fa";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+    <section class="mx-auto w-full max-w-[720px] space-y-8 bg-white print:space-y-6">
+    <div class=' flex flex-col gap-2 '>
+      <h1 class= 'font-bold text-2xl'>Anushka</h1>
+      <p class='text-gray-500 mt-3 text-medium  '>
+      Web developer focused on building products with extra attention to detail.</p>
+      <div class='text-gray-500 flex flex-row gap-2 mt-3 items-center'><IoLocationSharp /> <span>Bijnor, India </span> </div>
+      <div class='text-gray-500 flex flex-row gap-5 mt-4'> 
+        <a href='tel:+918077330400' class=' group block max-xs rounded-lg p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-gray-200 hover:ring-gray-200'><FaPhoneAlt /></a>
+        <a href='mailto:anushkaasingh321@gmail.com' class=' group block max-xs rounded-lg p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-gray-200 hover:ring-gray-200'><IoMdMail /></a>
+        <a href='https://www.linkedin.com/in/anushkaasingh321/' class=' group block max-xs rounded-lg p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-gray-200 hover:ring-gray-200'><FaLinkedin /></a>
+        <a href='https://github.com/Anushkaa321' class=' group block max-xs rounded-lg p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-gray-200 hover:ring-gray-200'><FaGithub /></a>
+        <a href='https://x.com/Anushka_321' class=' group block max-xs rounded-lg p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-gray-200 hover:ring-gray-200' ><FaSquareXTwitter /></a>
+        
+      </div>
+      <div class='flex min-h-0 flex-col ' >
+        <h1 class=' text-xl mt-6 font-medium'>About</h1>
+        <p class='text-gray-500 mt-4'> I'm a passionate Web Developer specializing in front-end technologies, dedicated  <br/> to creating engaging, user-friendly interfaces that combine aesthetic appeal <br/> with optimal performance to enhance the overall user experience.<br/> My techstack mainly revolves around <span class='font-semibold text-black'> Reactjs, Nextjs.</span></p>
+      </div>
+
+      <div class='flex min-h-0 flex-col '>
+        <h1  class=' text-xl mt-6 font-medium'>Work Experience</h1>
+        
+              <div class='text-medium text-gray-500'>
+                <h2 class='mt-4 flex flex-row items-center gap-2 font-semibold text-black'> Zidio Development -   Web Developer Intern</h2>
+                <p class='mt-2 '> Remote - Present 2024</p>
+                <p class='mt-1'>Assisted in designing, developing, and deploying web applications using [programming languages/technologies, e.g., HTML, CSS, JavaScript, React, etc.].</p>
+              </div>
+      </div>
+      <div class='flex min-h-0 flex-col'>
+        <h1  class= ' text-xl mt-6 font-medium'>Skills</h1>
+        <div class='mt-4'>
+        <div class='flex items-center justify-start gap-3 flex-wrap py-2'>
+          <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+         text-gray-500'>HTML</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+         text-gray-500'>CSS</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>JavaScript</div>
+            <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Bootstrap</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Reactjs</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Redux</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Tailwind CSS</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+          text-gray-500'>Nextjs</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Material UI</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Figma</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>REST APIs</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Jest</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+            text-gray-500'>Git</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Nodejs</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>Expressjs</div>
+           <div class='inline-flex items-center rounded-full border px-2.5  py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+           text-gray-500'>MongoDB</div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div class='flex min-h-0 flex-col'>
+        <h1  class= ' text-xl mt-6 font-medium'>Projects</h1>
+        <div class="grid grid-cols-1 gap-3.5 print:grid-cols-3 print:gap-3 md:grid-col-2 lg:grid-cols-3">
+        <div class='rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3 gap-3 ]]] mt-5 specialHover  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-offwhite-200 duration-300'>
+            <div class='font-medium flex items-center justify-between'>
+              <div class='flex items-center gap-2'>
+                <h2>Saas Landing Page</h2>
+                <span class='size-1 rounded-full bg-green-500'></span>
+                </div>
+                <a href='https://saas-landing-page-gamma.vercel.app/'><IoIosLink /></a>
+                </div>
+                <p class='text-medium text-gray-500 flex-1'>This is a frontend project.<br/>It was made to practice Tailwind CSS, Reactjs and Nextjs together. It is just a basic template for Saas Landing Page.</p>
+         </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+         <div class='rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3 gap-3 ]]] mt-5 specialHover  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-offwhite-200 duration-300'>
+            <div class='font-medium flex items-center justify-between'>
+              <div class='flex items-center gap-2'>
+                <h2>Real-Estate</h2>
+                <span class='size-1 rounded-full bg-green-500'></span>
+                </div>
+                <a href='https://real-eastery.vercel.app/'><IoIosLink /></a>
+                </div>
+                <p class='text-medium text-gray-500 flex-1'>This is a project which lets you search for a particular property like house or flat and price range. Check out this awesome search and filter website.</p>
+         </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+         <div class='rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3 gap-3 ]]] mt-5 specialHover  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-offwhite-200 duration-300'>
+            <div class='font-medium flex items-center justify-between'>
+              <div class='flex items-center gap-2'>
+                <h2>Zerodha</h2>
+                <span class='size-1 rounded-full bg-green-500'></span>
+                </div>
+                <a href='https://zerodha-frontend-zeta.vercel.app/'><IoIosLink /></a>
+                </div>
+                <p class='text-medium text-gray-500 flex-1'>A clone of Zerodha-Online Stock Trading website.Frontend Project where I tried to replicate the look and feel of the original site.</p>
+         </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          </div>
+
+
+    
+
+         
       </div>
+   
+    </div>
+    </section>
     </main>
   );
 }
